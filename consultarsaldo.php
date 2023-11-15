@@ -99,17 +99,10 @@ function mostrarSweetAlert($icon, $text, $redirectionPage = null)
                                     <!-- Agrega más celdas según tu tabla -->
                                 </tr>";
                                 }
-
                                 echo "</table>";
                                 // Cerrar la conexión
-
-
-
                                 //$conn->close();
-
-
                             }
-                        }
                         if (isset($_POST['estado'])) {
                         }
 
