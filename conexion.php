@@ -7,7 +7,6 @@ $DB_PORT=$_ENV["DB_PORT"];  // Cambia esto el host de la baase de datos que crea
 // Crear una conexión
 $conn =mysqli_connect("$DB_HOST", "$DB_USER", "$DB_PASSWORD", "$DB_NAME", "$DB_PORT");
 
-
 // Verificar la conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
@@ -16,5 +15,6 @@ if ($conn->connect_error) {
 //echo "Conexión exitosa";
 
 // Cerrar la conexión
-//$conn->close();
+$conn->close();
 ?>
+
