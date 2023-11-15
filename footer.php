@@ -12,6 +12,7 @@
 </div>
 <!-- Fin content wrapper-->
 
+
 </div>
 </div>
 </div>
@@ -39,9 +40,7 @@ Menú fijo a la izquierda
 </label>
 </div>
 </li>
-</ul>
-<br/>
- <li>
+<li>
 <div class="checkbox-nice">
 <input type="checkbox" id="config-fixed-footer"/>
 <label for="config-fixed-footer">
