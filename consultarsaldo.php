@@ -48,7 +48,7 @@ function mostrarSweetAlert($icon, $text, $redirectionPage = null)
 
                             // Recuperar el término de búsqueda
                             $id = $_POST['id'];
-
+                                $id = sprintf('%09s', $id);
                             // Verificar la conexión
                             if ($conn->connect_error) {
                                 die("Error de conexión: " . $conn->connect_error);
@@ -56,7 +56,7 @@ function mostrarSweetAlert($icon, $text, $redirectionPage = null)
 
                             // Realizar la consulta SQL
                             $consulta = "SELECT
-                            clientes.idcliente as dui,
+                            clientes.idcliente AS dui,
                             clientes.nombre AS Nombre,
                             prestamo.fprestamo AS fechaP,
                             prestamo.monto AS monto,
@@ -73,7 +73,7 @@ function mostrarSweetAlert($icon, $text, $redirectionPage = null)
                              INNER JOIN
                             clientes ON clientes.idcliente = prestamo.idcliente
                                 INNER JOIN
-                            pagos ON prestamo.idprestamo = pagos.idprestamo
+                            pagos ON prestamo.idcliente = pagos.duiCliente
                             
                             WHERE clientes.idcliente = '$id'";
                             $resultado = $conn->query($consulta);
