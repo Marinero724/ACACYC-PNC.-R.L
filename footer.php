@@ -41,6 +41,16 @@ Menú fijo a la izquierda
 </li>
 </ul>
 <br/>
+ <li>
+<div class="checkbox-nice">
+<input type="checkbox" id="config-fixed-footer"/>
+<label for="config-fixed-footer">
+Pie Fijo
+</label>
+</div>
+</li>
+</ul>
+<br/>
 
 <h4>Color del Tema</h4>
 <ul id="skin-colors" class="clearfix">
