@@ -86,7 +86,7 @@ if (isset($_SESSION['idusuario'])) {
     }
 } else {
     // El usuario no ha iniciado sesión, redirigirlo al formulario de inicio de sesión
-    header("Location: login.html");
+    header("Location: index.php");
     exit();
 }
 ?>
