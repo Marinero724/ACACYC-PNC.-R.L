@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost"; // Cambia esto si tu base de datos está en un servidor remoto
+$servername = "roundhouse.proxy.rlwy.net"; // Cambia esto si tu base de datos está en un servidor remoto
 $username = "root"; // Cambia esto al nombre de usuario de tu base de datos
-$password = ""; // Cambia esto a tu contraseña de base de datos
-$dbname = "prestamo"; // Cambia esto al nombre de la base de datos que creaste
+$password = "CFf-bbbGG22A6Ddb2G1a6fa-dhG5ae3g"; // Cambia esto a tu contraseña de base de datos
+$dbname = "railway"; // Cambia esto al nombre de la base de datos que creaste
 
 
 // Crear una conexión
