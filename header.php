@@ -5,7 +5,8 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 require_once 'conexion.php';
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Crear una conexión
+$conn = mysqli_connect("$DB_HOST", "$DB_USER", "$DB_PASSWORD", "$DB_NAME", "$DB_PORT");
 
 if (isset($_SESSION['idusuario'])) {
     $idRol = $_SESSION['idRol'];

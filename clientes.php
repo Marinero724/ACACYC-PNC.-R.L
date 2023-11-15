@@ -2,7 +2,8 @@
 session_start();
 require_once 'conexion.php';
 require_once 'header.php';
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Crear una conexión
+$conn = mysqli_connect("$DB_HOST", "$DB_USER", "$DB_PASSWORD", "$DB_NAME", "$DB_PORT");
 ?>
 <!DOCTYPE html>
 <html>
