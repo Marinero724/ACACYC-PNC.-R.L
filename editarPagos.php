@@ -3,7 +3,7 @@ session_start();  // Continuar la sesión
 // Verificamos si se proporcionó el parámetro 'idCategoria' en la URL
 require_once 'conexion.php';
 require_once 'header.php';
-$conn = mysqli_connect($servername, $username, $password, $dbname); 
+$conn =mysqli_connect("$DB_HOST", "$DB_USER", "$DB_PASSWORD", "$DB_NAME", "$DB_PORT");
 //Validamos si trae id_usuario para ver si esta logueado y el idCategoria para saber la tabla
 if (isset($_GET['idpago']) && isset($_GET['idUsuario'])) {
     // Obtener el ID de categoría de la URL
