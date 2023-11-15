@@ -2,7 +2,7 @@
 session_start();  // Continuar la sesión
 // Verificamos si se proporcionó el parámetro 'idCategoria' en la URL
 require_once 'conexion.php';
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn =mysqli_connect("$DB_HOST", "$DB_USER", "$DB_PASSWORD", "$DB_NAME", "$DB_PORT");
 //Validamos si trae id_usuario para ver si esta logueado y el idCategoria para saber la tabla
 //BLOQUE PARA ELIMINAR PRESTAMOS
 if (isset($_GET['idPrestamo']) && isset($_GET['idUsuario'])) {
