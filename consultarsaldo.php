@@ -90,9 +90,6 @@ function mostrarSweetAlert($icon, $text, $redirectionPage = null)
                                 </tr>";
 
                             while ($fila = $resultado->fetch_assoc()) {
-                                if (!$fila) {
-                                    mostrarSweetAlert("error", "SOCIO NO EXISTE." . mysqli_error($conn), "consultarsaldo.php");
-                                } else {
                                     echo "<tr>
                                     <td>{$fila['dui']}</td>
                                     <td>{$fila['Nombre']}</td>
