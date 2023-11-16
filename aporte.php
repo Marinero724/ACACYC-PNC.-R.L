@@ -38,7 +38,7 @@ if (isset($_SESSION['idusuario'])) {
             // Consulta de ejemplo
             $sqlid = "SELECT idcuenta
 FROM cuentasdeahorro  
-WHERE idcliente ='$idcliente' ";
+WHERE idcliente = $idcliente ";
             $resultado = $conn->query($sqlid);
             $fila = $resultado->fetch_assoc();
             $idcuenta = $fila['idcuenta'];
